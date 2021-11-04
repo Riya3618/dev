@@ -1,0 +1,7 @@
+const request=require("request-promise");
+const cheerio=require("cheerio");
+request=("https://www.nasdaq.com/market-activity/quotes/historical",(error,response,html)=>{if(!error && response.statusCode==200){const $=cheerio.load(html);}}
+const dr=$(".tablefield-paragraph-8357596-field_table");
+const output=dr.find("th").text();
+$("..tablefield-paragraph-8357596-field_table").each((i,data)=>const x=$data.text();const y=$data.text();const z=$data.text(););
+console.log(x,y,z);
